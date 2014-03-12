@@ -1,0 +1,10 @@
+#Navigate to desktop to get info on raster file
+gdalinfo C:\Users\ccantey\Desktop\Hanover2\MINr3r311.jp2
+
+
+## Translate batch of rasters
+for /r %g in (*.tif) do gdal_translate -of JP2ECW -co "LARGE_OK=YES" "%g" "%~dpng.jp2"
+
+
+## Translate individual raster
+gdal_translate -of JP2ECW -co "LARGE_OK=YES" input.ecw output.jp2
