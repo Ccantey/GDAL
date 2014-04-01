@@ -6,5 +6,5 @@ gdalinfo C:\Users\ccantey\Desktop\Hanover2\MINr3r311.jp2
 for /r %g in (*.tif) do gdal_translate -of JP2ECW -co "LARGE_OK=YES" "%g" "%~dpng.jp2"
 
 
-## Translate individual raster
+## Translate individual raster (ex: ecw to jp2)
 gdal_translate -of JP2ECW -co "LARGE_OK=YES" input.ecw output.jp2
