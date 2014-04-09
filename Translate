@@ -2,7 +2,7 @@
 gdalinfo C:\Users\ccantey\Desktop\Hanover2\MINr3r311.jp2
 
 
-## Translate batch of rasters
+## Translate batch of rasters (ex: tif to jp2)
 for /r %g in (*.tif) do gdal_translate -of JP2ECW -co "LARGE_OK=YES" "%g" "%~dpng.jp2"
 
 
